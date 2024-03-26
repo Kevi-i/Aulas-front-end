@@ -1,0 +1,27 @@
+
+h1 {
+    color: crimson;
+}
+
+.titulo {
+    color: blue;
+    text-decoration: underline;
+}
+
+.sublinhado {
+    text-decoration: underline;
+}
+
+h1.titulo {
+    color: green;
+}
+
+.link:hover {
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#sub {
+    color:purple;
+}
