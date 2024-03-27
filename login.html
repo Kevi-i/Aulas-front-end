@@ -10,20 +10,46 @@
             border: 1px solid blue;
             padding: 5px;
             height: 120px;
-            display: inline-block;
+            min-width: 400px;
+            max-width: 600px;
         }
         
         .logo {
             width: 40%;
+            float: left;
         }
         
         .entrada {
             width: 50%;
-            display: inline;
+            float: right;
+            height: 100px;
         }
 
+        .logo img {
+            margin-top: 50px;
+            margin-left: 20%;
+        }
 
+        .entrada label {
+            font-size: 10px;
+            margin-top: 10px;
+            display: inline-block;
+            font-family:Arial;
+        }
 
+        .botao {
+            margin-top: 10px;
+            background-color:lightgreen;
+            border: 1px solid darkgreen;
+            padding: 4px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .botao:hover {
+            background-color: green;
+            color: white;
+        }
 
     </style>
 
@@ -32,13 +58,15 @@
     
     <div class="caixa">
         <div class="logo">
-        <img src="https://pt.wikipedia.org/static/images/mobile/copyright/wikipedia-wordmark-fr.svg" />
+                <img src="https://pt.wikipedia.org/static/images/mobile/copyright/wikipedia-wordmark-fr.svg" />
         </div>
 
         <div class="entrada">
-        <input name="email" type="text"/>
-        <input name="senha" type="password"/>
-        <button>Entrar</button>    
+                <label>Email</label>
+                    <input name="email" type="text"/>
+                <label>Senha</label>
+                    <input name="senha" type="password"/>
+                <button class="botao">Entrar</button>    
         </div>
 
     </div>
